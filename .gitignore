@@ -1,0 +1,7 @@
+# go
+.gopath/
+
+# dev env
+shell.nix
+.direnv/
+.envrc
