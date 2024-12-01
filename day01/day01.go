@@ -1,7 +1,6 @@
 package day01
 
 import (
-	"fmt"
 	"sort"
 	"time"
 
@@ -19,7 +18,6 @@ func (d Day01) Part1(input string) util.Solution {
 
 	for _, line := range util.SplitContentLine(input) {
 		nums := util.ParseNumbers(line)
-		fmt.Println(nums)
 		lhs = append(lhs, nums[0])
 		rhs = append(rhs, nums[1])
 	}
