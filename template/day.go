@@ -3,7 +3,7 @@ package dayXX
 import (
 	"time"
 
-	"github.com/HSLU-Student/AoC-2023/util"
+	"github.com/HSLU-Student/AoC-2024/util"
 )
 
 type DayXX struct{}

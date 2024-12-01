@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path"
+	"path/filepath"
 	"strings"
 )
 
@@ -23,7 +24,13 @@ func GetContent(day string) string {
 }
 
 func GetContentRoot(day string) string {
-	path := path.Join("/workspaces/AoC-2023/data", fmt.Sprintf("%s.txt", day))
+	rpath := "/data/" + fmt.Sprintf("%s.txt", day)
+	bpath, err := filepath.Abs("../")
+	if err != nil {
+		fmt.Print(err.Error())
+		os.Exit(1)
+	}
+	path := filepath.Join(bpath, rpath)
 	return readContent(path)
 }
 
