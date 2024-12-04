@@ -7,6 +7,7 @@ import (
 
 	"github.com/HSLU-Student/AoC-2024/day01"
 	"github.com/HSLU-Student/AoC-2024/day02"
+	"github.com/HSLU-Student/AoC-2024/day03"
 	"github.com/HSLU-Student/AoC-2024/util"
 )
 
@@ -39,6 +40,7 @@ func main() {
 	puzzles := map[int]util.Day{
 		1: day01.Day01{},
 		2: day02.Day02{},
+		3: day03.Day03{},
 	}
 
 	selectedPuzzle, exist := puzzles[day]
